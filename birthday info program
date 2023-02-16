@@ -1,108 +1,211 @@
-user = input('Enter your name: ')
-print('Hi', user, '!') 
+name = input('Enter your name: ')
+print('Hi', name +'!') 
 
-age = input('What age are you turning/turned this year? ')
+age = input('What age have you turned/ are turning this year (in 2023)? ')
 birthYear = 2023-int(age)
-print('You are born in', birthYear)
 
-month = input('What number month were you born in?') 
-day = input('What day of this month are you born on? ')
-
-if int(month) == 1:
-    if 0 < int(day) and int(day) <= 20:
-        print("You're a Capricorn!")
-    elif int(day) > 20 and int(day)<= 30:
-        print("You're an Aquarius.")
-    else:
-        day = input ('What day were you born on?')
-
-elif int(month) == 2:
-    if 0 < int(day) and int(day) <= 19:
-        print('You are an Aquarius.')
-    elif int(day) > 19 and int(day)<= 28:
-        print("You're a Pisces." )
-    else:
-        day = input('What day were you born on?')
-
-elif int(month) == 3:
-    if 0 < int(day) and int(day) <=20:
-        print("You're a Pisces.")
-    elif int(day) > 20 and int(day) <= 31:
-        print("You're an Aries.")
-    else:
-        day = input('What day were you born on?')
+#creates a loop that makes sure the birth month is valid (within the 12 months of the year)
+month = input('what month were you born in (enter as its number, ex. March = ‘3’)') 
+while int(month)<1 or int(month)>12:
+    print('\n\nThere are only 12 months in a year silly, why dont you try again!')
+    month = input('what month were you born in (enter as its number, ex. March = ‘3’)')
         
-elif int(month) == 4:
-	if  0 < int(day) and int(day) <=20:
-		print("You're an Aries.")
-	elif int(day) > 20 and int(day) < 30:
-		print("You're a Taurus.")
-	else:
-		day = input('What day were you born on?') 
+day = input('What day of this month are you born on? ')
+horoscope = ''
+monthName=''
+horoscopeInfo =''
+hLink =''
 
-elif int(month) == 5:
-	if 0 < int(day) and int(day) <=20:
-		print("You're a Taurus.")
-	elif int(day) > 20 and int(day)<= 31:
-		print("You're a Gemini.")
-	else:
-		day = input('What day were you born on?')
+#creates a loop that allows users to try again if they have mistakenly put in the wrong birth day
+while True:
+    if int(month) == 1:
+        monthName = 'January'
+        
+        if 0 < int(day) and int(day) <= 20:
+            horoscope ='Capricorn'
+            horoscopeInfo = 'Capricorns are masters of discipline.\nThe wringing of the hands, the constant reminders, the exacting structure, the ever-increasing goals, the tidal wave of self-criticism that \nlasts forever. They are the ultimate perfectionists.\nThey can be so absorbed in their own internal monologue that it becomes impossible to get them to look away from themselves.\nCapricorns are often called “workaholics.”'
+            hLink ='https://www.costarastrology.com/zodiac-signs/capricorn-sign'
+            break
+        elif int(day) > 20 and int(day)<= 30:
+            horoscope = 'Aquarius'
+            horoscopeInfo ='Aquarians are archetypal outcasts. This doesn’t mean they’re loners.\nIn fact, they thrive in large groups—charming you with their peculiar senses of humor, intriguing you with fun facts about the history of\ndisposable straws, or convincing you to join their reading groups.\nThe alienation they feel is often self-imposed—a result of their knee-jerk contrarianism, rather than a lack of social intelligence.\nThey try to be weird. Aquarians hang grapefruit rinds from the wall and call it art, they pretend to actually like noise music, they saturate\ntheir internal monologues with SAT words.'
+            hLink ='https://www.costarastrology.com/zodiac-signs/aquarius-sign'
+            break
+        else:
+            day = input ('Oops, you made a mistake, why dont you try again...What day were you born on?')
 
-elif int(month) == 6:
-	if 0 < int(day) and int(day) <=21:
-		print("You're a Gemini.")
-	elif int(day) > 21 and int(day) <= 30:
-		print("You're a Cancer.")
-	else:
-		day = input('What day were you born on?')
+    elif int(month) == 2:
+        monthName= 'Feburary'
+        
+        if 0 < int(day) and int(day) <= 19:
+            horoscope = 'Aquarius'
+            horoscopeInfo ='Aquarians are archetypal outcasts. This doesn’t mean they’re loners.\nIn fact, they thrive in large groups—charming you with their peculiar senses of humor, intriguing you with fun facts about the history of\ndisposable straws, or convincing you to join their reading groups.\nThe alienation they feel is often self-imposed—a result of their knee-jerk contrarianism, rather than a lack of social intelligence.\nThey try to be weird. Aquarians hang grapefruit rinds from the wall and call it art, they pretend to actually like noise music, they saturate\ntheir internal monologues with SAT words.'
+            hLink = 'https://www.costarastrology.com/zodiac-signs/aquarius-sign'
+            break
+        elif int(day) > 19 and int(day)<= 28:
+            horoscope = 'Pisces'
+            horoscopeInfo ='Describing a Pisces’ personality can be difficult because Pisces tend to evade distinction.\nTheir behavior changes significantly based on who they’re around.\nPisces are just permeable membranes that pensively let things flow through them.\nThey are cerebral sea sponges.\nThey are boundless, diluting themselves with larger personalities to avoid having to form coherent identities.'
+            hLink = 'https://www.costarastrology.com/zodiac-signs/pisces-sign'
+            break
+        else:
+            day = input ('Oops, you made a mistake, why dont you try again...What day were you born on?')
 
-elif int(month) == 7:
-	if  0 < int(day) and int(day) <=22:
-		print("You're a Cancer.")
-	elif int(day) > 22 and int(day) <= 30:
-		print("You're a Leo.")
-	else:
-		day = input('What day were you born on?')
+    elif int(month) == 3:
+        monthName ='March'
+        
+        if 0 < int(day) and int(day) <=20:
+            horoscope = 'Pisces'
+            horoscopeInfo ='Describing a Pisces’ personality can be difficult because Pisces tend to evade distinction.\nTheir behavior changes significantly based on who they’re around.\nPisces are just permeable membranes that pensively let things flow through them.\nThey are cerebral sea sponges.\nThey are boundless, diluting themselves with larger personalities to avoid having to form coherent identities.'
+            hLink='https://www.costarastrology.com/zodiac-signs/pisces-sign'
+            break
+        elif int(day) > 20 and int(day) <= 31:
+            horoscope = 'Aries'
+            horoscopeInfo ='Aries are driven by a desire to prove themselves and their strength. They have high energy, and are competitive and ambitious.\nThey naturally take charge because they are good at initiating new projects.\nThey can also be impatient, but are naturally active and don’t like to waste time.'
+            hLink = 'https://www.costarastrology.com/zodiac-signs/aries-sign'
+            break
+        else:
+            day = input ('Oops, you made a mistake, why dont you try again...What day were you born on?')
 
-elif int(month) == 8:
-	if  0 < int(day) and int(day) <=23:
-		print("You're a Leo.")
-	elif int(day) > 23 and int(day) <= 30:
-		print("You're a Virgo.")
-	else:
-		day = input('What day were you born on?')
+    elif int(month) == 4:
+        monthName= 'April'
+        
+        if  0 < int(day) and int(day) <=20:
+            horoscope ='Aries'
+            horoscopeInfo= 'Aries are driven by a desire to prove themselves and their strength. They have high energy, and are competitive and ambitious.\nThey naturally take charge because they are good at initiating new projects.\nThey can also be impatient, but are naturally active and don’t like to waste time.'
+            hLink = 'https://www.costarastrology.com/zodiac-signs/aries-sign'
+            break
+        elif int(day) > 20 and int(day) < 30:
+            horoscope = 'Taurus'
+            horoscopeInfo = 'Tauruses are the human equivalent of moss. A handmade wooden chair.\nThey are normally satisfied with the way things are. They embody stability.\nSitting in a patch of grass admiring the breeze.\nWhen everything else seems to be falling apart, Tauruses are a rock of dependability in an oasis of calm.\nPractical knowledge and experience is their modus operandi.'
+            hLink= 'https://www.costarastrology.com/zodiac-signs/taurus-sign'
+            break
+        else:
+            day = input ('Oops, you made a mistake, why dont you try again...What day were you born on?')
 
-elif int(month) == 9:
-	if  0 < int(day) and int(day) <=23:
-		print("You're a Virgo.")
-	elif int(day) > 23 and int(day) <= 30:
-		print("You're a Libra.")
-	else:
-		day = input('What day were you born on?')
+    elif int(month) == 5:
+        monthName = 'May'
+        if 0 < int(day) and int(day) <=20:
+            horoscope ='Taurus'
+            horoscopeInfo = 'Tauruses are the human equivalent of moss. A handmade wooden chair.\nThey are normally satisfied with the way things are. They embody stability.\nSitting in a patch of grass admiring the breeze.\nWhen everything else seems to be falling apart, Tauruses are a rock of dependability in an oasis of calm.\nPractical knowledge and experience is their modus operandi.'
+            hLink= 'https://www.costarastrology.com/zodiac-signs/taurus-sign'
+            break
+        elif int(day) > 20 and int(day)<= 31:
+            horoscope = 'Gemini'
+            horoscopeInfo ='Geminis are versatile, comfortable being both introverts and extroverts.\nThey are quick to adapt to the energy of a room–they can be the life of the party or a complete wallflower.\nGeminis know how to bring dissimilar people together and make them get along.'
+            hLink= 'https://www.costarastrology.com/zodiac-signs/gemini-sign'
+            break
+        else:
+            day = input ('Oops, you made a mistake, why dont you try again...What day were you born on?')
 
-elif int(month) == 10:
-    if  0 < int(day) and int(day) <=23:
-        print("You're a Libra.")
-    elif int(day) > 23 and int(day) <= 30:
-        print("You're a Scorpio.")
+    elif int(month) == 6:
+        monthName = 'June'
+        if 0 < int(day) and int(day) <=21:
+            horoscope = 'Gemini'
+            horoscopeInfo ='Geminis are versatile, comfortable being both introverts and extroverts.\nThey are quick to adapt to the energy of a room–they can be the life of the party or a complete wallflower.\nGeminis know how to bring dissimilar people together and make them get along.'
+            hLink= 'https://www.costarastrology.com/zodiac-signs/gemini-sign'
+            break
+        elif int(day) > 21 and int(day) <= 30:
+            horoscope = 'Cancer'
+            horoscopeInfo= 'A Cancer’s personality is like wading chest deep in a lake of warm water.\nIt feels sparkling and cool while youre in the shallow end, but you know that if you were to dive in, it would feel warm.'
+            hLink= 'https://www.costarastrology.com/zodiac-signs/cancer-sign'
+            break
+        else:
+            day = input ('Oops, you made a mistake, why dont you try again...What day were you born on?')
+
+    elif int(month) == 7:
+        monthName = 'July'
+        if  0 < int(day) and int(day) <=22:
+            horoscope = 'Cancer'
+            horoscopeInfo= 'A Cancer’s personality is like wading chest deep in a lake of warm water.\nIt feels sparkling and cool while youre in the shallow end, but you know that if you were to dive in, it would feel warm.'
+            hLink= 'https://www.costarastrology.com/zodiac-signs/cancer-sign'
+            break
+        elif int(day) > 22 and int(day) <= 30:
+            horoscope = 'Leo'
+            horoscopeInfo= 'Leos inject ambition into everything they do. They are ruled by the heart.\nTheir actions are natural and effortless because they are brash and confident and trust their instincts.'
+            hLink ='https://www.costarastrology.com/zodiac-signs/leo-sign'
+            break
+        else:
+            day = input ('Oops, you made a mistake, why dont you try again...What day were you born on?')
+            
+    elif int(month) == 8:
+        monthName = 'August'
+        if  0 < int(day) and int(day) <=23:
+            horoscope = 'Leo'
+            horoscopeInfo= 'Leos inject ambition into everything they do. They are ruled by the heart.\nTheir actions are natural and effortless because they are brash and confident and trust their instincts.'
+            hLink ='https://www.costarastrology.com/zodiac-signs/leo-sign'
+            break
+        elif int(day) > 23 and int(day) <= 30:
+            horoscope ='Virgo'
+            horoscopeInfo ='Virgos are known for being perfectionists.\nThey are known for their attention to detail, which helps them find patterns where there are none.\nAt times, Virgos can be finicky and critical to a fault.'
+            hLink ='https://www.costarastrology.com/zodiac-signs/virgo-sign'
+            break
+        else:
+            day = input ('Oops, you made a mistake, why dont you try again...What day were you born on?')
+
+    elif int(month) == 9:
+        monthName ='September'
+        if  0 < int(day) and int(day) <=23:
+            horoscope = 'Virgo'
+            horoscopeInfo ='Virgos are known for being perfectionists.\nThey are known for their attention to detail, which helps them find patterns where there are none.\nAt times, Virgos can be finicky and critical to a fault.'
+            hLink ='https://www.costarastrology.com/zodiac-signs/virgo-sign'
+            break
+        elif int(day) > 23 and int(day) <= 30:
+            horoscope = 'Libra'
+            horoscopeInfo = 'Libras are difficult to really understand because they seem so contradictory.\nThey’re simultaneously extroverted and introverted, strategic and spontaneous, focused and intuitive.\nThis variability makes it difficult to pin down their true character.\nThey are an entire constellation of personalities.'
+            hLink ='https://www.costarastrology.com/zodiac-signs/libra-sign'
+            break
+        else:
+            day = input ('Oops, you made a mistake, why dont you try again...What day were you born on?')
+
+    elif int(month) == 10:
+        monthName ='October'
+        if  0 < int(day) and int(day) <=23:
+            horoscope = 'Libra'
+            horoscopeInfo = 'Libras are difficult to really understand because they seem so contradictory.\nThey’re simultaneously extroverted and introverted, strategic and spontaneous, focused and intuitive.\nThis variability makes it difficult to pin down their true character.\nThey are an entire constellation of personalities.'
+            hLink ='https://www.costarastrology.com/zodiac-signs/libra-sign'
+            break
+        elif int(day) > 23 and int(day) <= 30:
+            horoscope = 'Scorpio'
+            horoscopeInfo = 'A Scorpio personality is a chasm of infinite complexity (or at least how they project themselves).\nThey are difficult people to get to know because they are psychological trap doors.'
+            hLink = 'https://www.costarastrology.com/zodiac-signs/scorpio-sign'
+            break
+        else:
+            day = input ('Oops, you made a mistake, why dont you try again...What day were you born on?')
+
+    elif int(month) == 11:
+        monthName ='November'
+        if  0 < int(day) and int(day) <=22:
+            horoscope = 'Scorpio'
+            horoscopeInfo = 'A Scorpio personality is a chasm of infinite complexity (or at least how they project themselves).\nThey are difficult people to get to know because they are psychological trap doors.'
+            hLink = 'https://www.costarastrology.com/zodiac-signs/scorpio-sign'
+            break
+        elif int(day) > 22 and int(day) <= 30:
+            horoscope = 'Sagittarius'
+            horoscopeInfo = 'Sagittarians are the ultimate empiricists.\nThey will always choose principles over feelings and will often question who they are.\nThey move from job to job, philosophy to philosophy, belief to belief.\nThey are explorers of the human condition and are unafraid of change.\nSagittarians feel like the world is their playground. They love to explore the unknown.\nAt their core, they want to understand how the world works.'
+            hLink ='https://www.costarastrology.com/zodiac-signs/sagittarius-sign'
+            break
+        else:
+            day = input ('Oops, you made a mistake, why dont you try again...What day were you born on?')
+
+    elif int(month) == 12:
+        monthName= 'December'
+        if  0 < int(day) and int(day) <=21:
+            horoscope = 'Sagittarius'
+            horoscopeInfo = 'Sagittarians are the ultimate empiricists.\nThey will always choose principles over feelings and will often question who they are.\nThey move from job to job, philosophy to philosophy, belief to belief.\nThey are explorers of the human condition and are unafraid of change.\nSagittarians feel like the world is their playground. They love to explore the unknown.\nAt their core, they want to understand how the world works.'
+            hLink ='https://www.costarastrology.com/zodiac-signs/sagittarius-sign'
+            break
+        elif int(day) > 21 and int(day) <= 30:
+            horoscope = 'Capricorn'
+            horoscopeInfo = 'Capricorns are masters of discipline.\nThe wringing of the hands, the constant reminders, the exacting structure, the ever-increasing goals, the tidal wave of self-criticism that\nlasts forever. They are the ultimate perfectionists.\nThey can be so absorbed in their own internal monologue that it becomes impossible to get them to look away from themselves.\nCapricorns are often called “workaholics.”'
+            hLink ='https://www.costarastrology.com/zodiac-signs/capricorn-sign'
+            break
+        else:
+            day = input ('Oops, you made a mistake, why dont you try again...What day were you born on?')
+
     else:
-        day = input('What day were you born on?')
+        print('hmm something went wrong :/')
+        
 
-elif int(month) == 11:
-	if  0 < int(day) and int(day) <=22:
-		print("You're a Scorpio.")
-	elif int(day) > 22 and int(day) <= 30:
-		print("You're a Sagittarius.")
-	else:
-		day = input('What day were you born on?')
-
-elif int(month) == 12:
-	if  0 < int(day) and int(day) <=21:
-		print("You're a Sagittarius.")
-	elif int(day) > 21 and int(day) <= 30:
-		print("You're a Capricorn.")
-	else:
-		day = input('What day were you born on?')
-
-else:
-    print('Something went wrong!')
+print("\nWell", name + ", your birthday is", monthName, str(day) + ",", str(birthYear) +'. You are a', horoscope + ', here is a little bit of infromation about your sign:\n')
+print(horoscopeInfo)    
+print("\nIf you would like some more info feel free to check out:", hLink)
