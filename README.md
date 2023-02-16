@@ -7,7 +7,7 @@ Step 1: First prompt the user for their name.
 Step 2: Prompt the user for their current age.
     Step 3: Calculate what their birthday is.     
     Step 4: Compare the information given and identify their zodiac sign
-Step 5: Prompt the user for their birth month and day (store that in seperate varaibles)
+Step 5: Prompt the user for their birth month and day (store that in seperate variables)
     Step 6: Compare the birth months with a line of ifs
     Step 7: Once within the correct birth month, compare the days to specify their horiscope
 Step 8: Cleanly print out all information for user
