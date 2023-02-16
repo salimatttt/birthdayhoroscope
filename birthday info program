@@ -1,1 +1,26 @@
+user = input('Enter your name: ')
+print('Hi', user, '!') 
 
+age = input('What age are you turning/ have turned this year? ')
+birthYear = 2023-int(age)
+print('You are born in', birthYear)
+
+month = input('What number month were you born in?') 
+day = input('What day of this month are you born on? ')
+
+if int(month) == 1:
+    if 0 < int(day) and int(day) <= 20:
+        print("You're a Capricorn!")
+    elif int(day) > 20 and int(day)< 30:
+        print("You're an Aquarius.")
+    else:
+        print('Silly, wrong month hun!')
+        day = input ('What day were you born on?')
+
+elif int(month) == 2:
+    if 0 < int(day) and int(day) <= 19:
+        print('You are an Aquarius.')
+    elif int(day) > 19 and int(day)< 28:
+        print("You're a Pisces." )
+    else:
+        day = input('What day were you born on?')
