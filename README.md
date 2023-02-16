@@ -1,9 +1,5 @@
 # hello-world
-welcome to my public repository page!
-
-# Group 12 members (in canvas)
-Dorothy Crow
-Salimat Shonekan
+in this group, there is two people. our names are Salimat Shonekan and Dorothy Crow. we joined a group on Canvas called "Version Control X Group 12. " salimat created the repository page and dorothy created the pull request, and we merged it together! welcome to our public repository page :)
 
 # description:
 
