@@ -1,7 +1,7 @@
 name = input('Enter your name: ')
 print('Hi', name +'!') 
 
-age = input('What age have you turned/ are turning this year (in 2023)? ')
+age = input('What age have you turned/are turning this year (in 2023)? ')
 birthYear = 2023-int(age)
 
 #creates a loop that makes sure the birth month is valid (within the 12 months of the year)
@@ -111,101 +111,3 @@ while True:
             break
         else:
             day = input ('Oops, you made a mistake, why dont you try again...What day were you born on?')
-
-    elif int(month) == 7:
-        monthName = 'July'
-        if  0 < int(day) and int(day) <=22:
-            horoscope = 'Cancer'
-            horoscopeInfo= 'A Cancer’s personality is like wading chest deep in a lake of warm water.\nIt feels sparkling and cool while youre in the shallow end, but you know that if you were to dive in, it would feel warm.'
-            hLink= 'https://www.costarastrology.com/zodiac-signs/cancer-sign'
-            break
-        elif int(day) > 22 and int(day) <= 30:
-            horoscope = 'Leo'
-            horoscopeInfo= 'Leos inject ambition into everything they do. They are ruled by the heart.\nTheir actions are natural and effortless because they are brash and confident and trust their instincts.'
-            hLink ='https://www.costarastrology.com/zodiac-signs/leo-sign'
-            break
-        else:
-            day = input ('Oops, you made a mistake, why dont you try again...What day were you born on?')
-            
-    elif int(month) == 8:
-        monthName = 'August'
-        if  0 < int(day) and int(day) <=23:
-            horoscope = 'Leo'
-            horoscopeInfo= 'Leos inject ambition into everything they do. They are ruled by the heart.\nTheir actions are natural and effortless because they are brash and confident and trust their instincts.'
-            hLink ='https://www.costarastrology.com/zodiac-signs/leo-sign'
-            break
-        elif int(day) > 23 and int(day) <= 30:
-            horoscope ='Virgo'
-            horoscopeInfo ='Virgos are known for being perfectionists.\nThey are known for their attention to detail, which helps them find patterns where there are none.\nAt times, Virgos can be finicky and critical to a fault.'
-            hLink ='https://www.costarastrology.com/zodiac-signs/virgo-sign'
-            break
-        else:
-            day = input ('Oops, you made a mistake, why dont you try again...What day were you born on?')
-
-    elif int(month) == 9:
-        monthName ='September'
-        if  0 < int(day) and int(day) <=23:
-            horoscope = 'Virgo'
-            horoscopeInfo ='Virgos are known for being perfectionists.\nThey are known for their attention to detail, which helps them find patterns where there are none.\nAt times, Virgos can be finicky and critical to a fault.'
-            hLink ='https://www.costarastrology.com/zodiac-signs/virgo-sign'
-            break
-        elif int(day) > 23 and int(day) <= 30:
-            horoscope = 'Libra'
-            horoscopeInfo = 'Libras are difficult to really understand because they seem so contradictory.\nThey’re simultaneously extroverted and introverted, strategic and spontaneous, focused and intuitive.\nThis variability makes it difficult to pin down their true character.\nThey are an entire constellation of personalities.'
-            hLink ='https://www.costarastrology.com/zodiac-signs/libra-sign'
-            break
-        else:
-            day = input ('Oops, you made a mistake, why dont you try again...What day were you born on?')
-
-    elif int(month) == 10:
-        monthName ='October'
-        if  0 < int(day) and int(day) <=23:
-            horoscope = 'Libra'
-            horoscopeInfo = 'Libras are difficult to really understand because they seem so contradictory.\nThey’re simultaneously extroverted and introverted, strategic and spontaneous, focused and intuitive.\nThis variability makes it difficult to pin down their true character.\nThey are an entire constellation of personalities.'
-            hLink ='https://www.costarastrology.com/zodiac-signs/libra-sign'
-            break
-        elif int(day) > 23 and int(day) <= 30:
-            horoscope = 'Scorpio'
-            horoscopeInfo = 'A Scorpio personality is a chasm of infinite complexity (or at least how they project themselves).\nThey are difficult people to get to know because they are psychological trap doors.'
-            hLink = 'https://www.costarastrology.com/zodiac-signs/scorpio-sign'
-            break
-        else:
-            day = input ('Oops, you made a mistake, why dont you try again...What day were you born on?')
-
-    elif int(month) == 11:
-        monthName ='November'
-        if  0 < int(day) and int(day) <=22:
-            horoscope = 'Scorpio'
-            horoscopeInfo = 'A Scorpio personality is a chasm of infinite complexity (or at least how they project themselves).\nThey are difficult people to get to know because they are psychological trap doors.'
-            hLink = 'https://www.costarastrology.com/zodiac-signs/scorpio-sign'
-            break
-        elif int(day) > 22 and int(day) <= 30:
-            horoscope = 'Sagittarius'
-            horoscopeInfo = 'Sagittarians are the ultimate empiricists.\nThey will always choose principles over feelings and will often question who they are.\nThey move from job to job, philosophy to philosophy, belief to belief.\nThey are explorers of the human condition and are unafraid of change.\nSagittarians feel like the world is their playground. They love to explore the unknown.\nAt their core, they want to understand how the world works.'
-            hLink ='https://www.costarastrology.com/zodiac-signs/sagittarius-sign'
-            break
-        else:
-            day = input ('Oops, you made a mistake, why dont you try again...What day were you born on?')
-
-    elif int(month) == 12:
-        monthName= 'December'
-        if  0 < int(day) and int(day) <=21:
-            horoscope = 'Sagittarius'
-            horoscopeInfo = 'Sagittarians are the ultimate empiricists.\nThey will always choose principles over feelings and will often question who they are.\nThey move from job to job, philosophy to philosophy, belief to belief.\nThey are explorers of the human condition and are unafraid of change.\nSagittarians feel like the world is their playground. They love to explore the unknown.\nAt their core, they want to understand how the world works.'
-            hLink ='https://www.costarastrology.com/zodiac-signs/sagittarius-sign'
-            break
-        elif int(day) > 21 and int(day) <= 30:
-            horoscope = 'Capricorn'
-            horoscopeInfo = 'Capricorns are masters of discipline.\nThe wringing of the hands, the constant reminders, the exacting structure, the ever-increasing goals, the tidal wave of self-criticism that\nlasts forever. They are the ultimate perfectionists.\nThey can be so absorbed in their own internal monologue that it becomes impossible to get them to look away from themselves.\nCapricorns are often called “workaholics.”'
-            hLink ='https://www.costarastrology.com/zodiac-signs/capricorn-sign'
-            break
-        else:
-            day = input ('Oops, you made a mistake, why dont you try again...What day were you born on?')
-
-    else:
-        print('hmm something went wrong :/')
-        
-
-print("\nWell", name + ", your birthday is", monthName, str(day) + ",", str(birthYear) +'. You are a', horoscope + ', here is a little bit of infromation about your sign:\n')
-print(horoscopeInfo)    
-print("\nIf you would like some more info feel free to check out:", hLink)
