@@ -26,7 +26,7 @@ while True:
             horoscopeInfo = 'Capricorns are masters of discipline.\nThe wringing of the hands, the constant reminders, the exacting structure, the ever-increasing goals, the tidal wave of self-criticism that \nlasts forever. They are the ultimate perfectionists.\nThey can be so absorbed in their own internal monologue that it becomes impossible to get them to look away from themselves.\nCapricorns are often called “workaholics.”'
             hLink ='https://www.costarastrology.com/zodiac-signs/capricorn-sign'
             break
-        elif int(day) > 20 and int(day)<= 30:
+        elif int(day) > 20 and int(day) <= 31:
             horoscope = 'Aquarius'
             horoscopeInfo ='Aquarians are archetypal outcasts. This doesn’t mean they’re loners.\nIn fact, they thrive in large groups—charming you with their peculiar senses of humor, intriguing you with fun facts about the history of\ndisposable straws, or convincing you to join their reading groups.\nThe alienation they feel is often self-imposed—a result of their knee-jerk contrarianism, rather than a lack of social intelligence.\nThey try to be weird. Aquarians hang grapefruit rinds from the wall and call it art, they pretend to actually like noise music, they saturate\ntheir internal monologues with SAT words.'
             hLink ='https://www.costarastrology.com/zodiac-signs/aquarius-sign'
@@ -119,7 +119,7 @@ while True:
             horoscopeInfo= 'A Cancer’s personality is like wading chest deep in a lake of warm water.\nIt feels sparkling and cool while youre in the shallow end, but you know that if you were to dive in, it would feel warm.'
             hLink= 'https://www.costarastrology.com/zodiac-signs/cancer-sign'
             break
-        elif int(day) > 22 and int(day) <= 30:
+        elif int(day) > 22 and int(day) <= 31:
             horoscope = 'Leo'
             horoscopeInfo= 'Leos inject ambition into everything they do. They are ruled by the heart.\nTheir actions are natural and effortless because they are brash and confident and trust their instincts.'
             hLink ='https://www.costarastrology.com/zodiac-signs/leo-sign'
@@ -144,7 +144,7 @@ while True:
 
     elif int(month) == 9:
         monthName ='September'
-        if  0 < int(day) and int(day) <=23:
+        if  0 < int(day) and int(day) <= 23:
             horoscope = 'Virgo'
             horoscopeInfo ='Virgos are known for being perfectionists.\nThey are known for their attention to detail, which helps them find patterns where there are none.\nAt times, Virgos can be finicky and critical to a fault.'
             hLink ='https://www.costarastrology.com/zodiac-signs/virgo-sign'
@@ -164,7 +164,7 @@ while True:
             horoscopeInfo = 'Libras are difficult to really understand because they seem so contradictory.\nThey’re simultaneously extroverted and introverted, strategic and spontaneous, focused and intuitive.\nThis variability makes it difficult to pin down their true character.\nThey are an entire constellation of personalities.'
             hLink ='https://www.costarastrology.com/zodiac-signs/libra-sign'
             break
-        elif int(day) > 23 and int(day) <= 30:
+        elif int(day) > 23 and int(day) <= 31:
             horoscope = 'Scorpio'
             horoscopeInfo = 'A Scorpio personality is a chasm of infinite complexity (or at least how they project themselves).\nThey are difficult people to get to know because they are psychological trap doors.'
             hLink = 'https://www.costarastrology.com/zodiac-signs/scorpio-sign'
@@ -174,7 +174,7 @@ while True:
 
     elif int(month) == 11:
         monthName ='November'
-        if  0 < int(day) and int(day) <=22:
+        if  0 < int(day) and int(day) <= 22:
             horoscope = 'Scorpio'
             horoscopeInfo = 'A Scorpio personality is a chasm of infinite complexity (or at least how they project themselves).\nThey are difficult people to get to know because they are psychological trap doors.'
             hLink = 'https://www.costarastrology.com/zodiac-signs/scorpio-sign'
@@ -189,12 +189,12 @@ while True:
 
     elif int(month) == 12:
         monthName= 'December'
-        if  0 < int(day) and int(day) <=21:
+        if  0 < int(day) and int(day) <= 21:
             horoscope = 'Sagittarius'
             horoscopeInfo = 'Sagittarians are the ultimate empiricists.\nThey will always choose principles over feelings and will often question who they are.\nThey move from job to job, philosophy to philosophy, belief to belief.\nThey are explorers of the human condition and are unafraid of change.\nSagittarians feel like the world is their playground. They love to explore the unknown.\nAt their core, they want to understand how the world works.'
             hLink ='https://www.costarastrology.com/zodiac-signs/sagittarius-sign'
             break
-        elif int(day) > 21 and int(day) <= 30:
+        elif int(day) > 21 and int(day) <= 31:
             horoscope = 'Capricorn'
             horoscopeInfo = 'Capricorns are masters of discipline.\nThe wringing of the hands, the constant reminders, the exacting structure, the ever-increasing goals, the tidal wave of self-criticism that\nlasts forever. They are the ultimate perfectionists.\nThey can be so absorbed in their own internal monologue that it becomes impossible to get them to look away from themselves.\nCapricorns are often called “workaholics.”'
             hLink ='https://www.costarastrology.com/zodiac-signs/capricorn-sign'
