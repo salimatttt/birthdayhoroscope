@@ -1,5 +1,5 @@
 # birthday horoscope program project
-    in this group, there is two people. our names are Salimat Shonekan and Dorothy Crow. we joined a group on Canvas called "Version Control X Group 12. " salimat         created the repository page and dorothy created the pull request, and we merged it together! welcome to our public repository page :)
+    in this group, there is two people. our names are Salimat Shonekan and Dorothy Crow. we joined a group on Canvas called "Version Control X Group 12. " salimat created the repository page and dorothy created the pull request, and we merged it together! welcome to our public repository page :)
     
 
 # description of program:
@@ -30,15 +30,15 @@
     - No special requirements
     
 # configuration:
-    configuration of code is permissable, however adjustments must be approved by owner of respository and users must comply with code of conduct (which can be found         listed in this repository).
+    configuration of code is permissable, however adjustments must be approved by owner of respository and users must comply with code of conduct (which can be found listed in this repository).
 
 # installation:
-    the easiest method for installation of this program is to copy over the code into python compiler (such as visual studios or atom), as listed in our license             modifications can be made.
+    the easiest method for installation of this program is to copy over the code into python compiler (such as visual studio code, atom, pycharm, and/or sublime text), as listed in our license modifications can be made.
 
 # usage:
     users will need a python compiler to run program and will need to submit:
         - name
         - age
         - birth month and day
-    as stated in our license code may be copied, distributed, and modified. however it cannot be distributed commercially due to the contribution of copyrighted material     in out program.
+    as stated in our license code may be copied, distributed, and modified. however it cannot be distributed commercially due to the contribution of copyrighted material in out program.
     
