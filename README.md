@@ -18,12 +18,12 @@
     configuration of code is permissable, however adjustments must be approved by owner of respository and users must comply with code of conduct (which can be found         listed in this repository).
 
 # installation:
-    the easiest method for installation of this program is to copy over the code into python compiler (such as visual studios or atom), as listed in our license             modifications can be made.
+    the easiest method for installation of this program is to copy over the code into python compiler (such as visual studio code, atom or pycharm), as listed in our license             modifications can be made.
 
 # usage:
     users will need a python compiler to run program and will need to submit:
         - name
         - age
         - birth month and day
-    as stated in our license code may be copied, distributed, and modified. however it cannot be distributed commercially due to the contribution of copyrighted material     in out program.
+    as stated in our license code may be copied, distributed, and modified. however it cannot be distributed commercially due to the contribution of copyrighted material in out program.
     
